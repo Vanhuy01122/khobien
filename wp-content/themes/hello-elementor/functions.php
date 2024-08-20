@@ -263,3 +263,74 @@ if ( ! function_exists( 'hello_elementor_body_open' ) ) {
 		wp_body_open();
 	}
 }
+
+function custom_select_dropdown() {
+    return '
+    <select>
+        <option value="">Tất cả</option>
+        <option value="29">29-Hà Nội</option>
+        <option value="30">30-Hà Nội</option>
+        <option value="51">51-TP.Hồ Chí Minh</option>
+        <option value="11">11-Cao Bằng</option>
+        <option value="12">12-Lạng Sơn</option>
+        <option value="14">14-Quảng Ninh</option>
+        <option value="15">15-Hải Phòng</option>
+        <option value="17">17-Thái Bình</option>
+        <option value="18">18-Nam Định</option>
+        <option value="19">19-Phú Thọ</option>
+        <option value="20">20-Thái Nguyên</option>
+        <option value="21">21-Yên Bái</option>
+        <option value="22">22-Tuyên Quang</option>
+        <option value="23">23-Hà Giang</option>
+        <option value="24">24-Lào Cai</option>
+        <option value="25">25-Lai Châu</option>
+        <option value="26">26-Sơn La</option>
+        <option value="27">27-Điện Biên</option>
+        <option value="28">28-Hòa Bình</option>
+        <option value="34">34-Hải Dương</option>
+        <option value="35">35-Ninh Bình</option>
+        <option value="36">36-Thanh Hóa</option>
+        <option value="37">37-Nghệ An</option>
+        <option value="38">38-Hà Tĩnh</option>
+        <option value="43">43-Đà Nẵng</option>
+        <option value="47">47-ĐắK Lắk</option>
+        <option value="48">48-Đắk Nông</option>
+        <option value="49">49-Lâm Đồng</option>
+        <option value="60">60-Đồng Nai</option>
+        <option value="61">61-Bình Dương</option>
+        <option value="62">62-Long An</option>
+        <option value="63">63-Tiền Giang</option>
+        <option value="64">64-Vĩnh Long</option>
+        <option value="65">65-Cần Thơ</option>
+        <option value="66">66-Đồng Tháp</option>
+        <option value="67">67-An Giang</option>
+        <option value="68">68-Kiên Giang</option>
+        <option value="69">69-Cà Mau</option>
+        <option value="70">70-Tây Ninh</option>
+        <option value="71">71-Tây Ninh</option>
+        <option value="72">72-Bà Rịa Vũng Tàu</option>
+        <option value="73">73-Quảng Bình</option>
+        <option value="74">74-Quảng Trị</option>
+        <option value="75">75-Thừa Thiên Huế</option>
+        <option value="77">77-Bình Định</option>
+        <option value="78">78-Phú Yên</option>
+        <option value="79">79-Khánh Hòa</option>
+        <option value="81">81-Gia Lai</option>
+        <option value="82">82-Kon Tum</option>
+        <option value="83">83-Sóc Trăng</option>
+        <option value="84">84-Trà Vinh</option>
+        <option value="85">85-Ninh Thuận</option>
+        <option value="86">86-Bình Thuận</option>
+        <option value="88">88-Vĩnh Phúc</option>
+        <option value="89">89-Hưng Yên</option>
+        <option value="90">90-Hà Nam</option>
+        <option value="92">92-Quảng Nam</option>
+        <option value="93">93-Bình Phước</option>
+        <option value="94">94-Bạc Liêu</option>
+        <option value="95">95-Hậu Giang</option>
+        <option value="97">97-Bắc Kạn</option>
+        <option value="98">98-Bắc Giang</option>
+        <option value="99">99-Bắc Ninh</option>
+    </select>';
+}
+add_shortcode('custom_dropdown', 'custom_select_dropdown');
