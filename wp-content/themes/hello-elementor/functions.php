@@ -266,7 +266,7 @@ if ( ! function_exists( 'hello_elementor_body_open' ) ) {
 
 function custom_select_dropdown() {
     return '
-    <select>
+    <select id="list_city">
         <option value="">Tất cả</option>
         <option value="29">29-Hà Nội</option>
         <option value="30">30-Hà Nội</option>
@@ -334,3 +334,10 @@ function custom_select_dropdown() {
     </select>';
 }
 add_shortcode('custom_dropdown', 'custom_select_dropdown');
+
+// file tuỳ biến js
+
+function custom_enqueue_scripts() {
+	wp_enqueue_script('custom-js', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), null, true);
+ }
+ add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
