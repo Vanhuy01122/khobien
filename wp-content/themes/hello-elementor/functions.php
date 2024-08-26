@@ -341,3 +341,4 @@ function custom_enqueue_scripts() {
 	wp_enqueue_script('custom-js', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), null, true);
  }
  add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
+

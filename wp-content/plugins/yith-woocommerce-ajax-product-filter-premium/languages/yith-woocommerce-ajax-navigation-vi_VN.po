@@ -1,0 +1,36 @@
+msgid "Filter"
+msgstr "Bộ lọc"
+
+msgid "Clear all"
+msgstr "Xóa tất cả"
+
+msgid "Show less"
+msgstr "Hiển thị ít hơn"
+
+msgid "Show more"
+msgstr "Hiển thị thêm"
+
+msgid "Price"
+msgstr "Giá"
+
+msgid "On sale"
+msgstr "Đang giảm giá"
+
+msgid "In stock"
+msgstr "Còn hàng"
+
+msgid "Out of stock"
+msgstr "Hết hàng"
+
+
+msgid "Default sorting"
+msgstr "Mặc định"
+
+msgid "Sort by latest"
+msgstr "Mới nhất"
+
+msgid "Sort by price: low to high"
+msgstr "Giá tăng dần"
+
+msgid "Sort by price: high to low"
+msgstr "Giá giảm dần"

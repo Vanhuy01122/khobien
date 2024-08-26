@@ -1,0 +1,2 @@
+<?php
+return ['project-id-version'=>'Loco Translate 2.6.11','report-msgid-bugs-to'=>'https://wordpress.org/support/plugin/loco-translate/','pot-creation-date'=>'2024-07-16 12:43+0000','po-revision-date'=>'2024-08-26 09:08+0000','last-translator'=>'','language-team'=>'Tiếng Việt','language'=>'vi','plural-forms'=>'nplurals=1; plural=0;','mime-version'=>'1.0','content-type'=>'text/plain; charset=UTF-8','content-transfer-encoding'=>'8bit','x-generator'=>'Loco https://localise.biz/','x-loco-version'=>'2.6.11; wp-6.6.1','x-domain'=>'loco-translate','messages'=>[]];
