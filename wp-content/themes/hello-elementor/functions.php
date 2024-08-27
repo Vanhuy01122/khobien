@@ -342,3 +342,30 @@ function custom_enqueue_scripts() {
  }
  add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
 
+
+ function custom_hide_product_images_except_single() {
+    if (!is_product()) {
+        remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20);
+    }
+}
+add_action('wp', 'custom_hide_product_images_except_single');
+
+function custom_remove_product_thumbnails() {
+    if (!is_product()) {
+        remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
+    }
+}
+add_action('wp', 'custom_remove_product_thumbnails');
+
+function custom_remove_related_product_elements() {
+    if (is_product()) {
+        // Ẩn ảnh sản phẩm trong mục "Sản phẩm tương tự"
+        remove_action('woocommerce_before_related_products', 'woocommerce_show_product_images', 20);
+        remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20);
+        remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_product_thumbnails', 20);
+
+        // Ẩn nút "Thêm vào giỏ hàng" trong mục "Sản phẩm tương tự"
+		remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
+    }
+}
+add_action('wp', 'custom_remove_related_product_elements');

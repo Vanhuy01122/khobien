@@ -34,3 +34,6 @@ msgstr "Giá tăng dần"
 
 msgid "Sort by price: high to low"
 msgstr "Giá giảm dần"
+
+msgid "Active filters"
+msgstr "Bộ lọc hoạt động"
