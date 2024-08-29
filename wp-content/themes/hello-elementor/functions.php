@@ -342,7 +342,6 @@ function custom_enqueue_scripts() {
  }
  add_action('wp_enqueue_scripts', 'custom_enqueue_scripts');
 
-
  function custom_hide_product_images_except_single() {
     if (!is_product()) {
         remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20);
